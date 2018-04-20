@@ -4,11 +4,30 @@
 <body style="text-align: center;">
 
 <h1>This is a heading</h1>
-<img src="images/banica.jpg" >
-<p>This is a paragraph.</p>
-
-<footer style="text-align:center;">
+<img id = "picture" src="images/banica.jpg" >
+<p id = "demo" >This is a paragraph.</p>
+<footer  style="text-align:center;">
 <p> this is a footer </p>
+<button onclick="togglePic();">The time is?</button>
 </footer>
+<script>
+	function togglePic()
+	{
+		if( document.getElementById('picture').src == "file:///C:/Users/fmi/Desktop/PU-SPA-094/PU-SPA-094/images/banica.jpg" )
+		{
+		document.getElementById('picture').src = "images/banica2.jpg";
+		}
+		else
+		{
+		document.getElementById('picture').src = "images/banica.jpg";  
+		}
+	}
+
+fetch( "https://jsonplaceholder.typicode.com/posts/1" );
+
+   
+	
+</script>
 </body>
+
 </html>
